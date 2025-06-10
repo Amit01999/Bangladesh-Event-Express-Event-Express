@@ -224,7 +224,7 @@ const Hero = () => {
           <div className="mb-6 h-20 flex items-center justify-center">
             <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold transition-all duration-1000">
               <span className="bg-gradient-to-r from-cyan-300 via-blue-300 to-purple-300 bg-clip-text text-transparent">
-                {heroImages[currentSlide].subtitle}
+                {heroImages[currentSlide].title}
               </span>
             </p>
           </div>
