@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { Volume2, Calendar, Printer, Palette } from 'lucide-react';
 
@@ -7,44 +6,71 @@ const Services = () => {
     {
       icon: Volume2,
       title: 'Audio-Visual Production',
-      description: 'State-of-the-art sound systems, professional lighting, LED screens, and truss setups',
-      features: ['Sound & Lighting Setup', 'LED Screens & Truss', 'Live Streaming', 'Technical Support'],
-      gradient: 'from-luxury-gold to-luxury-rose'
+      description:
+        'State-of-the-art sound systems, professional lighting, LED screens, and truss setups',
+      features: [
+        'Sound & Lighting Setup',
+        'LED Screens & Truss',
+        'Live Streaming',
+        'Technical Support',
+      ],
+      gradient: 'from-luxury-gold to-luxury-rose',
     },
     {
       icon: Calendar,
       title: 'Event Management',
-      description: 'Complete event planning and execution from concept to celebration',
-      features: ['Stage & Venue Decoration', 'Artist Booking', 'Security Equipment', 'HR/Volunteer Crew'],
-      gradient: 'from-luxury-emerald to-luxury-sapphire'
+      description:
+        'Complete event planning and execution from concept to celebration',
+      features: [
+        'Stage & Venue Decoration',
+        'Artist Booking',
+        'Security Equipment',
+        'HR/Volunteer Crew',
+      ],
+      gradient: 'from-luxury-emerald to-luxury-sapphire',
     },
     {
       icon: Printer,
       title: 'Printing & Packaging',
-      description: 'High-quality printing solutions and branded promotional materials',
-      features: ['PVC Banners', 'Branded Gifts', 'Promotional Materials', 'Custom Packaging'],
-      gradient: 'from-luxury-rose to-luxury-gold'
+      description:
+        'High-quality printing solutions and branded promotional materials',
+      features: [
+        'PVC Banners',
+        'Branded Gifts',
+        'Promotional Materials',
+        'Custom Packaging',
+      ],
+      gradient: 'from-luxury-rose to-luxury-gold',
     },
     {
       icon: Palette,
       title: 'Interior & Exhibition Design',
-      description: 'Creative interior decoration and professional stall design services',
-      features: ['Interior Decoration', 'Stall Design', 'Exhibition Setup', 'Custom Installations'],
-      gradient: 'from-luxury-sapphire to-luxury-emerald'
-    }
+      description:
+        'Creative interior decoration and professional stall design services',
+      features: [
+        'Interior Decoration',
+        'Stall Design',
+        'Exhibition Setup',
+        'Custom Installations',
+      ],
+      gradient: 'from-luxury-sapphire to-luxury-emerald',
+    },
   ];
 
   return (
-    <section id="services" className="py-20 bg-gradient-to-b from-slate-50 to-white">
+    <section
+      id="services"
+      className="py-20 bg-gradient-to-b from-slate-50 to-white"
+    >
       <div className="container mx-auto px-6">
-        <motion.div 
+        <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="font-montserrat font-bold text-5xl md:text-6xl mb-6 bg-gradient-to-r from-gray-900 to-luxury-gold bg-clip-text text-transparent">
+          <h2 className="font-montserrat font-bold text-5xl md:text-6xl mb-6 bg-gradient-to-r from-amber-500 to-luxury-gold bg-clip-text text-transparent">
             Our Services
           </h2>
           <p className="font-poppins text-xl text-gray-600 max-w-3xl mx-auto">
@@ -65,7 +91,9 @@ const Services = () => {
             >
               <div className="bg-white/80 backdrop-blur-lg p-8 rounded-3xl shadow-xl border border-white/30 h-full group-hover:shadow-2xl transition-all duration-500">
                 {/* Icon */}
-                <div className={`w-16 h-16 bg-gradient-to-r ${service.gradient} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                <div
+                  className={`w-16 h-16 bg-gradient-to-r ${service.gradient} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
+                >
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
 
@@ -82,8 +110,13 @@ const Services = () => {
                 {/* Features */}
                 <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="font-poppins text-sm text-gray-700 flex items-center">
-                      <div className={`w-2 h-2 bg-gradient-to-r ${service.gradient} rounded-full mr-3`}></div>
+                    <li
+                      key={featureIndex}
+                      className="font-poppins text-sm text-gray-700 flex items-center"
+                    >
+                      <div
+                        className={`w-2 h-2 bg-gradient-to-r ${service.gradient} rounded-full mr-3`}
+                      ></div>
                       {feature}
                     </li>
                   ))}
@@ -97,7 +130,7 @@ const Services = () => {
         </div>
 
         {/* Call to Action */}
-        <motion.div 
+        <motion.div
           className="text-center mt-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

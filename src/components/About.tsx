@@ -63,9 +63,14 @@ const About = () => {
             viewport={{ once: true }}
           >
             <div>
-              <h2 className="font-montserrat font-bold text-5xl mb-6 bg-gradient-to-r from-luxury-sapphire via-luxury-emerald to-luxury-gold bg-clip-text text-transparent">
+              <h2
+                className="font-montserrat font-bold text-5xl mb-6 
+             bg-gradient-to-r from-[#C99700] via-[#FFD700] to-[#B8860B] 
+             bg-clip-text text-transparent tracking-tight drop-shadow-sm"
+              >
                 About Us
               </h2>
+
               <p className="font-poppins text-lg text-gray-600 leading-relaxed mb-6">
                 Founded on 12-12-12, Bangladesh Event Express began as a vision
                 to revolutionize the event management industry. Our young,

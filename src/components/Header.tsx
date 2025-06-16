@@ -1,36 +1,13 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import logo from '../../public/logo.png';
+import { PhoneCall } from 'lucide-react';
 
 const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <motion.header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/90 backdrop-blur-lg shadow-lg' : 'bg-transparent'
-      }`}
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.8 }}
-    >
+    <motion.header className="fixed top-0 w-full z-50 transition-all duration-300 bg-white backdrop-blur-lg shadow-lg">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          {/* <motion.div
-            className="font-montserrat font-bold text-2xl bg-gradient-to-r from-luxury-gold to-luxury-rose bg-clip-text text-transparent"
-            whileHover={{ scale: 1.05 }}
-          >
-            Bangladesh Event Express
-          </motion.div> */}
-
           <motion.div
             className="w-28 h-10 flex items-center"
             whileHover={{ scale: 1.05 }}
@@ -54,9 +31,7 @@ const Header = () => {
               <motion.a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className={`font-poppins font-medium  hover:text-luxury-gold transition-colors relative group ${
-                  isScrolled ? 'text-gray-800' : 'text-gray-100'
-                }`}
+                className="font-poppins font-medium  hover:text-luxury-gold transition-colors relative group text-gray-900"
                 whileHover={{ y: -2 }}
               >
                 {item}
@@ -65,13 +40,22 @@ const Header = () => {
             ))}
           </div>
 
-          <motion.button
+          {/* <motion.button
             className="bg-gradient-to-r from-luxury-gold to-luxury-rose text-white px-6 py-2 rounded-full font-poppins font-medium shadow-lg hover:shadow-xl transition-all duration-300"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
           >
             Get Quote
-          </motion.button>
+          </motion.button> */}
+          <a href="tel:01871861888" className="hover:underline">
+            <motion.div
+              className="flex items-center gap-2 text-black font-semibold text-lg md:text-xl"
+              whileHover={{ scale: 1.05 }}
+            >
+              <PhoneCall className="w-5 h-5 text-orange-500" />
+              <span className="tracking-wide font-poppins">01871-861888</span>
+            </motion.div>
+          </a>
         </div>
       </nav>
     </motion.header>

@@ -13,6 +13,7 @@ import c10 from '../../public/patner/php family.png';
 import c11 from '../../public/patner/securex.jpg';
 import c12 from '../../public/patner/unitech.jpg';
 import c13 from '../../public/patner/বাংলাদেশ_মেরিন_একাডেমীর_লোগো.png';
+import LogosSection from './LogosSection';
 // import c14 from '../../public/patner/Ministry of Cultural Affairs.png';
 // import c15 from '../../public/patner/Ministry of Welfare.png';
 // import c16 from '../../public/patner/Embassy of Nepal Dhaka.png';
@@ -62,7 +63,6 @@ const Clients = () => {
         'Bangladesh Maritime University (Mirpur)',
         'Bangladesh Army & Army Welfare Trust',
         'Ministry of Labour & Employment',
-        'Ministry of Shipping',
         'Ministry of Cultural Affairs',
         'Ministry of Welfare',
         'Embassy of Nepal, Dhaka',
@@ -174,17 +174,15 @@ const Clients = () => {
       quote:
         "The team's creativity and technical expertise made our cultural event absolutely magical. Every moment was perfectly orchestrated with deep understanding of our heritage.",
       author: 'Dr. Kamal Hassan',
-      position: 'Director, Ministry of Cultural Affairs',
-      avatar:
-        'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150',
+      position: 'Director, PHP Family',
+      avatar: '',
     },
     {
       quote:
         'Professional, reliable, and innovative. Bangladesh Event Express has been our go-to partner for all major conferences and awareness campaigns.',
       author: 'Maria Rodriguez',
       position: 'Program Manager, UNICEF Bangladesh',
-      avatar:
-        'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150',
+      avatar: '',
     },
   ];
 
@@ -301,7 +299,7 @@ const Clients = () => {
         </div>
 
         {/* Enhanced Client Logos Section with Auto-Scroll */}
-        <motion.div
+        {/* <motion.div
           className="mb-20"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -318,47 +316,31 @@ const Clients = () => {
             </p>
           </div>
 
-          {/* Auto-scrolling logos container */}
-          <div className="relative overflow-hidden bg-gradient-to-r from-luxury-gold/5 via-luxury-emerald/5 to-luxury-sapphire/5 rounded-2xl md:rounded-3xl p-4 md:p-8 border border-luxury-gold/20 backdrop-blur-lg">
-            {/* Gradient overlays for smooth fade effect */}
-            <div className="absolute left-0 top-0 w-16 md:w-32 h-full bg-gradient-to-r from-white via-white/80 to-transparent z-10"></div>
-            <div className="absolute right-0 top-0 w-16 md:w-32 h-full bg-gradient-to-l from-white via-white/80 to-transparent z-10"></div>
+          <div className="bg-white py-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
+              Some Clients We Work With
+            </h2>
 
-            {/* Scrolling container with proper width */}
-            <div className="flex animate-scroll space-x-4 md:space-x-8 w-max">
+            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
               {duplicatedLogos.map((client, index) => (
-                <motion.div
-                  key={`${client.name}-${index}`}
-                  className="flex-shrink-0 w-48 md:w-72 group"
-                  whileHover={{ scale: 1.05, y: -5 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <div className="bg-white/90 backdrop-blur-lg p-3 md:p-6 rounded-xl md:rounded-2xl shadow-lg border border-white/30 hover:shadow-2xl hover:border-luxury-gold/30 transition-all duration-500 group-hover:bg-gradient-to-br group-hover:from-white group-hover:to-luxury-gold/5">
-                    <div className="aspect-video bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg md:rounded-xl flex items-center justify-center mb-2 md:mb-4 overflow-hidden border border-gray-200/50">
-                      <img
-                        src={client.logo}
-                        alt={client.name}
-                        className="w-full h-full object-cover rounded-lg md:rounded-xl group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
-                      />
-                    </div>
-                    <div className="text-center">
-                      <h4 className="font-montserrat font-semibold text-gray-900 text-sm md:text-lg mb-1 md:mb-2 group-hover:text-luxury-gold transition-colors duration-300">
-                        {client.name}
-                      </h4>
-                    </div>
-                  </div>
-                </motion.div>
+                <div key={`${client.name}-${index}`} className="w-32 md:w-40">
+                  <img
+                    src={client.logo}
+                    alt={client.name}
+                    className="w-full h-auto object-contain "
+                  />
+                </div>
               ))}
             </div>
           </div>
 
-          {/* Decorative elements */}
           <div className="flex justify-center mt-8 space-x-2">
             <div className="w-2 h-2 rounded-full bg-luxury-gold animate-pulse"></div>
             <div className="w-2 h-2 rounded-full bg-luxury-emerald animate-pulse delay-100"></div>
             <div className="w-2 h-2 rounded-full bg-luxury-rose animate-pulse delay-200"></div>
           </div>
-        </motion.div>
+        </motion.div> */}
+        <LogosSection logos={duplicatedLogos} />
 
         {/* Enhanced Testimonials Section */}
         <motion.div
@@ -367,7 +349,7 @@ const Clients = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="text-center mb-12">
+          <div className="text-center mt-5 mb-12">
             <h3 className="font-montserrat font-bold text-4xl mb-4 bg-gradient-to-r from-gray-900 to-luxury-gold bg-clip-text text-transparent">
               What Our Clients Say
             </h3>
