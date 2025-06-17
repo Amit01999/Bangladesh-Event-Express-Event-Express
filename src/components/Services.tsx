@@ -13,7 +13,6 @@ const Services = () => {
       description:
         'State-of-the-art sound systems, professional lighting, LED screens, and truss setups',
       features: [
-        'High Equipment Production House',
         'Audio Visual Production (HD, 4K)',
         'Shortfilm',
         'Documentary',
