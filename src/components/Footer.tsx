@@ -11,7 +11,7 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-gray-900 to-black text-white">
-      <div className="container mx-auto px-6 py-16">
+      <div className="container mx-auto px-6 pt-16">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
           {/* Company Info */}
           <motion.div
@@ -186,27 +186,23 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <motion.div
-          className="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
+          className="border-t border-gray-700 mt-8 pt-4 text-center pb-5"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <p className="font-poppins text-gray-400 text-center md:text-left mb-4 md:mb-0">
-            © 2024 Bangladesh Event Express. All rights reserved. Founded
-            12-12-12.
+          <p className=" text-gray-300 font-poppins">
+            © 2024 Bangladesh Event Express | Developed by{' '}
+            <a
+              href="http://bepro.it.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-luxury-gold hover:underline transition-colors"
+            >
+              BePro IT
+            </a>
           </p>
-          <div className="flex space-x-6 font-poppins text-sm text-gray-400">
-            <a href="#" className="hover:text-luxury-gold transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#" className="hover:text-luxury-gold transition-colors">
-              Terms of Service
-            </a>
-            <a href="#" className="hover:text-luxury-gold transition-colors">
-              Sitemap
-            </a>
-          </div>
         </motion.div>
       </div>
     </footer>

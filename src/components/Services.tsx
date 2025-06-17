@@ -1,23 +1,31 @@
 import { motion } from 'framer-motion';
 import { Volume2, Calendar, Printer, Palette } from 'lucide-react';
+import av from '../../public/service/av.png';
+import ev from '../../public/service/ev.png';
+import print from '../../public/service/pn.png';
+import interior from '../../public/service/ex.jpg';
 
 const Services = () => {
   const services = [
     {
-      icon: Volume2,
+      icon: av,
       title: 'Audio-Visual Production',
       description:
         'State-of-the-art sound systems, professional lighting, LED screens, and truss setups',
       features: [
-        'Sound & Lighting Setup',
-        'LED Screens & Truss',
-        'Live Streaming',
-        'Technical Support',
+        'High Equipment Production House',
+        'Audio Visual Production (HD, 4K)',
+        'Shortfilm',
+        'Documentary',
+        'TVC',
+        'Online Content Production',
+        'High Standard Script Writing',
+        'Post Production & High Tech Edit Panel',
       ],
       gradient: 'from-luxury-gold to-luxury-rose',
     },
     {
-      icon: Calendar,
+      icon: ev,
       title: 'Event Management',
       description:
         'Complete event planning and execution from concept to celebration',
@@ -30,7 +38,7 @@ const Services = () => {
       gradient: 'from-luxury-emerald to-luxury-sapphire',
     },
     {
-      icon: Printer,
+      icon: print,
       title: 'Printing & Packaging',
       description:
         'High-quality printing solutions and branded promotional materials',
@@ -43,7 +51,7 @@ const Services = () => {
       gradient: 'from-luxury-rose to-luxury-gold',
     },
     {
-      icon: Palette,
+      icon: interior,
       title: 'Interior & Exhibition Design',
       description:
         'Creative interior decoration and professional stall design services',
@@ -91,10 +99,19 @@ const Services = () => {
             >
               <div className="bg-white/80 backdrop-blur-lg p-8 rounded-3xl shadow-xl border border-white/30 h-full group-hover:shadow-2xl transition-all duration-500">
                 {/* Icon */}
-                <div
+                {/* <div
                   className={`w-16 h-16 bg-gradient-to-r ${service.gradient} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
                 >
                   <service.icon className="w-8 h-8 text-white" />
+                </div> */}
+                <div
+                  className={`w-16 h-16 bg-gradient-to-r  rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 overflow-hidden`}
+                >
+                  <img
+                    src={service.icon}
+                    alt={service.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 {/* Title */}

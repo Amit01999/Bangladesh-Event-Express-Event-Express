@@ -72,10 +72,14 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.9 }}
           >
             <button className="bg-gradient-to-r from-luxury-gold to-luxury-rose text-white px-10 py-4 rounded-full font-poppins font-semibold text-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 animate-glow">
-              Let's Create Your Event
+              <motion.a href="#contact" className="flex items-center gap-2">
+                Let's Create Your Event
+              </motion.a>
             </button>
             <button className="border-2 border-luxury-gold text-luxury-gold px-10 py-4 rounded-full font-poppins font-semibold text-lg hover:bg-gradient-to-r hover:from-luxury-gold hover:to-luxury-rose hover:text-white hover:border-transparent transition-all duration-300">
-              View Portfolio
+              <motion.a href="#portfolio" className="flex items-center gap-2">
+                View Portfolio
+              </motion.a>
             </button>
           </motion.div>
         </div>
