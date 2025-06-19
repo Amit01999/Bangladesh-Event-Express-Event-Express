@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <motion.header className="fixed top-0 w-full z-50 transition-all duration-300 bg-white backdrop-blur-lg shadow-lg">
-      <nav className="container mx-auto px-6 py-10">
+      <nav className="container mx-auto px-6 py-5">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <motion.div

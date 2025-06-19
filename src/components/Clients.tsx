@@ -343,7 +343,7 @@ const Clients = () => {
         <LogosSection logos={duplicatedLogos} />
 
         {/* Enhanced Testimonials Section */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -370,7 +370,6 @@ const Clients = () => {
                 viewport={{ once: true }}
                 whileHover={{ y: -5 }}
               >
-                {/* Background decoration */}
                 <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-luxury-gold/10 to-transparent rounded-full transform translate-x-8 -translate-y-8 group-hover:scale-150 transition-transform duration-700"></div>
 
                 <div className="relative z-10">
@@ -405,7 +404,7 @@ const Clients = () => {
               </motion.div>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
 
       {/* Custom scrollbar styles */}
