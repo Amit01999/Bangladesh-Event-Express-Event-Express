@@ -248,7 +248,7 @@ const About = () => {
               </div>
               <div className="text-center p-6 bg-white/50 backdrop-blur-sm rounded-2xl shadow-lg">
                 <div className="text-3xl font-bold bg-gradient-to-r from-luxury-emerald to-luxury-sapphire bg-clip-text text-transparent">
-                  500+
+                  1000+
                 </div>
                 <div className="text-gray-600 font-poppins">
                   Events Delivered

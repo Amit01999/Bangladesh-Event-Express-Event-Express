@@ -70,7 +70,7 @@ const Clients = () => {
     },
     {
       title: 'Audio-Visual Production',
-      count: '15+',
+      count: '100+',
       description: 'Media and production organizations',
       gradient: 'from-luxury-rose to-luxury-gold',
       icon: Video,
