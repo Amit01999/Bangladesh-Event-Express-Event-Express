@@ -175,6 +175,12 @@ const Footer = () => {
                 </div>
               </div>
               <div className="flex items-center space-x-3">
+                <Phone className="w-5 h-5 text-luxury-gold flex-shrink-0" />
+                <div className="font-poppins text-gray-300">
+                  <p>01672-172673</p>
+                </div>
+              </div>
+              <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-luxury-gold flex-shrink-0" />
                 <div className="font-poppins text-gray-300">
                   <p>eventexpress.bd@gmail.com</p>

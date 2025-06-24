@@ -488,7 +488,10 @@ const Contact = () => {
                       Call Us
                     </h4>
                     <p className="font-poppins text-sm text-gray-600">
-                      01871-861888
+                      +8801871861888
+                    </p>
+                    <p className="font-poppins text-sm text-gray-600">
+                      +8801672172673
                     </p>
                   </div>
                 </div>
